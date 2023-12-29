@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
   }
   
   data <- x$get() #otherwise, calculate the inverse of the matrix
-  invr <- solve(data, ...)
+  invr <- solve(data, ...) #use solve() to calculate the inverse of the matrix
   x$setinvr(invr)
   invr
 }
